@@ -1,0 +1,98 @@
+/* Apply general styles to the body, such as centering the content and setting background color */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('UTM_back.jpg'); /* Set the background image */
+    background-size: cover; /* Scale the image to cover the entire body */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-attachment: fixed; /* Keep the background fixed while scrolling */
+    position: relative; /* Make sure the ::before pseudo-element is positioned relative to the body */
+}
+
+/* Create a semi-transparent overlay using the ::before pseudo-element */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity (0.4) to control transparency */
+    pointer-events: none; /* Allow mouse events to pass through the overlay */
+    z-index: -1; /* Push the overlay behind other elements */
+}
+
+/* Style for the button container */
+.input-submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px; /* Add margin for spacing between buttons */
+    width: 200px; /* Set the width of the container */
+    position: relative; /* Ensure the container is positioned within the body */
+    z-index: 1; /* Bring the container in front of the transparent background */
+}
+
+/* Style for the buttons with fully opaque background */
+.submit-btn {
+    width: 200px; /* Set the width of the button to 100% of the container */
+    height: 60px; /* Set the height of the button */
+    background-color: #ffffff; /* Fully opaque button background color */
+    color: #000000; /* Text color */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    font-size: 18px; /* Font size of the text */
+}
+
+/* Change button background color on hover */
+
+
+.input-submit label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #000;
+    transform: scale(1.05, 1);
+    color:#fff;
+}
+/* Style for the logo */
+.logo {
+    width: 100px; /* Set the width of the logo */
+    height: auto; /* Maintain the aspect ratio of the logo */
+    margin-top: 10px; /* Add spacing below the logo */
+}
+
+/* Style for the banner */
+.banner {
+    text-align: center;
+    background-color: rgba(133, 133, 133, 0.7); /* Fully opaque background color for the banner */
+    padding: 10px;
+    height: auto; /* Remove fixed height to accommodate the title */
+    position: absolute;
+    top: 0; /* Position at the top of the body */
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for the title */
+.title {
+    color: #fff; /* Text color for the title */
+    font-size: 30px; /* Font size for the title */
+    margin-bottom: 10px; /* Adjust spacing as needed */
+}

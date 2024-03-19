@@ -1,0 +1,220 @@
+
+/* VIEW FORM START*/
+
+.container {
+
+    max-width: 800px;
+    background: rgba(156, 152, 152, 0.71);
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+    
+}
+.form-title {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+}
+
+.main-user-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.user-input-box:nth-child(2n) {
+    justify-content: end;
+}
+
+.user-input-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.user-input-box label {
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.mb-3 {
+width: 95%;
+color: white;
+font-size: 20px;
+font-weight: 400;
+margin: 5px 0;
+}
+
+
+.user-input-box input,
+.user-input-box select {
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+    cursor: pointer;
+  }
+  
+  .radio-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Separate radio buttons to the left and right */
+  }
+  
+  .radio-buttons .radio-left,
+  .radio-buttons .radio-right {
+    flex-basis: 48%; /* Adjust as needed to control the width of left and right sections */
+  }
+  
+  .radio-buttons input[type="radio"] {
+    margin-right: 5px; /* Add some space between radio buttons */
+    height: 20px; /* Reduce the height of radio buttons */
+    width: 20px; /* Reduce the width of radio buttons */
+    cursor: pointer;
+  }
+  
+  
+  
+  #description {
+    width: 100%;
+    padding: 40px;
+    border: 1px solid grey;
+    border-radius: 7px;
+    outline: none;
+    resize: vertical;
+    font-size: 16px;
+    margin-top: 10px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+  }
+  
+  /* Style for the file input label */
+  .form-label {
+  font-weight: bold;
+  margin-bottom: 0;
+  }
+  
+  .input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; /* Add some spacing between input groups */
+  }
+  
+  .input-label {
+  width: 95%;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px 0; /* Add some spacing between label and textarea */
+  }
+  
+  
+  /* CSS for styling the tick (checkmark) symbol */
+  buttons {
+  font-size: 30px; /* Adjust the size of the checkmark */
+  color: #000000; /* Change the color of the checkmark */
+  background-color:#a29d9d8c; /* Make the button background transparent */
+  border: none; /* Remove the button border */
+  cursor: pointer;
+  }
+  
+  buttons:hover {
+  text-decoration: underline; /* Add an underline effect on hover (optional) */
+  }
+  
+  
+  
+  /* Button Styles */
+  .button {
+    display: block; /* Change to block element to center it horizontally */
+    margin: 0 auto; /* Center horizontally by setting left and right margins to "auto" */
+    padding: 15px 50px;
+    font-size: 16px;
+    background-color: #000000; /* Button background color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    text-decoration: none; /* Remove underlines for links */
+    text-align: center;
+  }
+  
+  
+  /* Hover state */
+  .button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+  }
+  
+  /* Active (clicked) state */
+  .button:active {
+    background-color: #003d80; /* Even darker background color on click */
+  }
+  .radio-buttons {
+    display: flex; /* Use flexbox to arrange radio buttons side by side */
+    flex-wrap: wrap; /* Wrap to the next line if the container overflows */
+  }
+  
+  .radio-buttons input[type="radio"] {
+    margin-right: 10px; /* Add some space between radio buttons */
+  }
+  
+  
+  @media(max-width: 600px) {
+    .container {
+        min-width: 280px;
+    }
+  
+    .user-input-box {
+        margin-bottom: 12px;
+        width: 100%;
+    }
+  
+    .user-input-box:nth-child(2n) {
+        justify-content: space-between;
+    }
+  
+   
+  
+    .main-user-info {
+        max-height: 380px;
+        overflow: auto;
+    }
+  
+    .main-user-info::-webkit-scrollbar {
+        width: 0;
+    }
+  }
+  
+  
+  
+  
+  /* Style for the file input */
+  .input-group input[type="file"] {
+    border: 1px solid #ccc; /* Border color */
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #555; /* Text color for the input */
+    background-color: #fff; /* Background color */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+  }
+  
+  /* Style for the file input on hover */
+  .input-group input[type="file"]:hover {
+    border-color: #007BFF; /* Border color on hover */
+    cursor: pointer; /* Cursor style on hover */
+  }
+  
+  /*VIEW FORM END*/
